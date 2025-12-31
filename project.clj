@@ -14,7 +14,7 @@
 
   :plugins [[lein-project-version "0.1.0"]
             [lein-parent "0.3.6"]
-            [org.openvoxproject/i18n "0.9.3"]]
+            [org.openvoxproject/i18n "0.9.4"]]
 
   :source-paths ["src/clj"]
   :java-source-paths ["src/java"]
