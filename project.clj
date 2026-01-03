@@ -1,4 +1,4 @@
-(defproject org.openvoxproject/clj-shell-utils "2.1.0"
+(defproject org.openvoxproject/clj-shell-utils "2.1.1-SNAPSHOT"
   :description "Clojure shell execution utilities"
 
   :min-lein-version "2.9.0"
