@@ -3,7 +3,7 @@
 
   :min-lein-version "2.9.0"
 
-  :parent-project {:coords [org.openvoxproject/clj-parent "7.6.3"]
+  :parent-project {:coords [org.openvoxproject/clj-parent "7.6.6"]
                    :inherit [:managed-dependencies]}
   :license {:name "Apache-2.0"
             :url "https://www.apache.org/licenses/LICENSE-2.0.txt"}
