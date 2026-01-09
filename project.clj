@@ -31,7 +31,7 @@
 
 
 
-  :profiles { :test { :dependencies [[org.openvoxproject/trapperkeeper nil :classifier "test" :scope "test"]]}}
+  :profiles { :test { :dependencies [[org.openvoxproject/trapperkeeper 4.3.0 :classifier "test" :scope "test"]]}}
 
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
                                      :username :env/CLOJARS_USERNAME
