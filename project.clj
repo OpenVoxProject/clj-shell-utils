@@ -14,7 +14,7 @@
   :test-paths ["test/unit"]
 
   :plugins [[lein-project-version "0.1.0"]
-            [org.openvoxproject/i18n "1.0.2"]]
+            [org.openvoxproject/i18n "1.0.3"]]
 
   :source-paths ["src/clj"]
   :java-source-paths ["src/java"]
@@ -39,7 +39,7 @@
                  [org.slf4j/slf4j-api ~slf4j-version]
                  [org.openvoxproject/trapperkeeper]
                  [org.openvoxproject/kitchensink "3.5.4"]
-                 [org.openvoxproject/i18n "1.0.2"]]
+                 [org.openvoxproject/i18n "1.0.3"]]
 
 
 
