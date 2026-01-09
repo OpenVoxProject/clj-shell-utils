@@ -30,7 +30,7 @@
   :dependencies [[org.clojure/clojure]
                  [prismatic/schema "1.1.12"]
                  [org.apache.commons/commons-exec "1.6.0"]
-                 [commons-io "2.20.0"]
+                 [commons-io "2.21.0"]
                  [org.slf4j/log4j-over-slf4j ~slf4j-version]
                  [org.slf4j/slf4j-api ~slf4j-version]
                  [org.openvoxproject/trapperkeeper]
