@@ -24,6 +24,10 @@
   ;; defined under :dependencies ends up causing an error due to :pedantic? :abort,
   ;; because it is a dep of a dep with a different version, move it here.
   :managed-dependencies [[org.clojure/clojure "1.11.2"]
+                         [org.clojure/tools.logging "1.3.1"]
+
+                         [clj-time "0.15.2"]
+
                          [org.openvoxproject/trapperkeeper ~trapperkeeper-version]
                          [org.openvoxproject/trapperkeeper ~trapperkeeper-version :classifier "test"]]
 
@@ -34,7 +38,7 @@
                  [org.slf4j/log4j-over-slf4j ~slf4j-version]
                  [org.slf4j/slf4j-api ~slf4j-version]
                  [org.openvoxproject/trapperkeeper]
-                 [org.openvoxproject/kitchensink "3.5.3"]
+                 [org.openvoxproject/kitchensink "3.5.4"]
                  [org.openvoxproject/i18n "1.0.2"]]
 
 
