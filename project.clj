@@ -38,7 +38,7 @@
                  [org.slf4j/log4j-over-slf4j ~slf4j-version]
                  [org.slf4j/slf4j-api ~slf4j-version]
                  [org.openvoxproject/trapperkeeper]
-                 [org.openvoxproject/kitchensink "3.5.4"]
+                 [org.openvoxproject/kitchensink "3.5.5"]
                  [org.openvoxproject/i18n "1.0.3"]]
 
 
