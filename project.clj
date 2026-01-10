@@ -1,7 +1,7 @@
 (def slf4j-version "2.0.17")
 (def trapperkeeper-version "4.3.2")
 
-(defproject org.openvoxproject/clj-shell-utils "2.1.1-SNAPSHOT"
+(defproject org.openvoxproject/clj-shell-utils "2.1.1"
   :description "Clojure shell execution utilities"
 
   :min-lein-version "2.9.0"
