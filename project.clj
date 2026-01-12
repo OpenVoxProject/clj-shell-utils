@@ -1,10 +1,10 @@
+(def i18n-version "1.0.3")
 (def slf4j-version "2.0.17")
-(def trapperkeeper-version "4.3.2")
 
 (defproject org.openvoxproject/clj-shell-utils "2.1.2-SNAPSHOT"
   :description "Clojure shell execution utilities"
 
-  :min-lein-version "2.9.0"
+  :min-lein-version "2.9.1"
 
   :license {:name "Apache-2.0"
             :url "https://www.apache.org/licenses/LICENSE-2.0.txt"}
@@ -14,32 +14,38 @@
   :test-paths ["test/unit"]
 
   :plugins [[lein-project-version "0.1.0"]
-            [org.openvoxproject/i18n "1.0.3"]]
+            [org.openvoxproject/i18n ~i18n-version]]
 
   :source-paths ["src/clj"]
   :java-source-paths ["src/java"]
 
-  ;; These are to enforce consistent versions across dependencies of dependencies,
-  ;; and to avoid having to define versions in multiple places. If a component
-  ;; defined under :dependencies ends up causing an error due to :pedantic? :abort,
-  ;; because it is a dep of a dep with a different version, move it here.
+  ;; Generally, try to keep version pins in :managed-dependencies and the libraries
+  ;; this project actually uses in :dependencies, inheriting the version from
+  ;; :managed-dependencies. This prevents endless version conflicts due to deps of deps.
+  ;; Renovate should keep the versions largely in sync between projects.
   :managed-dependencies [[org.clojure/clojure "1.12.4"]
                          [org.clojure/tools.logging "1.3.1"]
 
                          [clj-time "0.15.2"]
-
-                         [org.openvoxproject/trapperkeeper ~trapperkeeper-version]
-                         [org.openvoxproject/trapperkeeper ~trapperkeeper-version :classifier "test"]]
+                         [commons-io "2.21.0"]
+                         [org.apache.commons/commons-exec "1.6.0"]
+                         [org.slf4j/log4j-over-slf4j ~slf4j-version]
+                         [org.slf4j/slf4j-api ~slf4j-version]
+                         [org.openvoxproject/i18n ~i18n-version]
+                         [org.openvoxproject/kitchensink "3.5.5"]
+                         [org.openvoxproject/trapperkeeper "4.3.2"]
+                         [org.openvoxproject/trapperkeeper "4.3.2" :classifier "test"]
+                         [prismatic/schema "1.4.1"]]
 
   :dependencies [[org.clojure/clojure]
-                 [prismatic/schema "1.4.1"]
-                 [org.apache.commons/commons-exec "1.6.0"]
-                 [commons-io "2.21.0"]
-                 [org.slf4j/log4j-over-slf4j ~slf4j-version]
-                 [org.slf4j/slf4j-api ~slf4j-version]
+                 [commons-io]
+                 [org.apache.commons/commons-exec]
+                 [org.openvoxproject/i18n]
+                 [org.openvoxproject/kitchensink]
                  [org.openvoxproject/trapperkeeper]
-                 [org.openvoxproject/kitchensink "3.5.5"]
-                 [org.openvoxproject/i18n "1.0.3"]]
+                 [org.slf4j/log4j-over-slf4j]
+                 [org.slf4j/slf4j-api]
+                 [prismatic/schema]]
 
 
 
