@@ -27,7 +27,7 @@
                          [org.clojure/tools.logging "1.3.1"]
 
                          [clj-time "0.15.2"]
-                         [commons-io "2.21.0"]
+                         [commons-io "2.22.0"]
                          [org.apache.commons/commons-exec "1.6.0"]
                          [org.slf4j/log4j-over-slf4j ~slf4j-version]
                          [org.slf4j/slf4j-api ~slf4j-version]
