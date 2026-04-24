@@ -1,7 +1,7 @@
 (def i18n-version "1.0.4")
 (def slf4j-version "2.0.17")
 
-(defproject org.openvoxproject/clj-shell-utils "2.1.2-SNAPSHOT"
+(defproject org.openvoxproject/clj-shell-utils "2.1.2"
   :description "Clojure shell execution utilities"
 
   :min-lein-version "2.9.1"
