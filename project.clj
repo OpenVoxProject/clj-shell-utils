@@ -33,8 +33,8 @@
                          [org.slf4j/slf4j-api ~slf4j-version]
                          [org.openvoxproject/i18n ~i18n-version]
                          [org.openvoxproject/kitchensink "3.5.7"]
-                         [org.openvoxproject/trapperkeeper "4.3.4"]
-                         [org.openvoxproject/trapperkeeper "4.3.4" :classifier "test"]
+                         [org.openvoxproject/trapperkeeper "4.3.5"]
+                         [org.openvoxproject/trapperkeeper "4.3.5" :classifier "test"]
                          [prismatic/schema "1.4.1"]]
 
   :dependencies [[org.clojure/clojure]
