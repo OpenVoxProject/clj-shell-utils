@@ -35,7 +35,7 @@
                          [org.openvoxproject/kitchensink "3.5.7"]
                          [org.openvoxproject/trapperkeeper "5.0.4"]
                          [org.openvoxproject/trapperkeeper "5.0.4" :classifier "test"]
-                         [prismatic/schema "1.4.1"]]
+                         [prismatic/schema "1.4.2"]]
 
   :dependencies [[org.clojure/clojure]
                  [commons-io]
