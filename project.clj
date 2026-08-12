@@ -4,7 +4,7 @@
 (defproject org.openvoxproject/clj-shell-utils "2.2.2-SNAPSHOT"
   :description "Clojure shell execution utilities"
 
-  :min-lein-version "2.9.1"
+  :min-lein-version "2.12.0"
 
   :license {:name "Apache-2.0"
             :url "https://www.apache.org/licenses/LICENSE-2.0.txt"}
