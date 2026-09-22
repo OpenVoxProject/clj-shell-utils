@@ -1,4 +1,4 @@
-(def i18n-version "1.0.5")
+(def i18n-version "1.0.6")
 (def slf4j-version "2.0.19")
 
 (defproject org.openvoxproject/clj-shell-utils "2.2.2-SNAPSHOT"
